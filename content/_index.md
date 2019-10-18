@@ -10,16 +10,16 @@ class: center, middle
 
 ![:scale 50%](/img/hugo-logo.png)
 
-Dmitry Kann // Yktoo Solutions
+Dmitry Kann · https://yktoo.solutions
 
 ---
 
 # Agenda
 
-1. Introduction: why static sites?
-2. What if static doesn't (quite) suffice?
-3. Meet Hugo
-4. ...
+1. Why would anyone make a static site?
+2. Hugo **is** the tool
+3. Hugo features
+4. TODO
 
 ---
 
@@ -27,7 +27,7 @@ Dmitry Kann // Yktoo Solutions
 
 A **static website** leverages a one-off content generation process, which creates the entire website.
 
-This content includes:
+This content can include:
 
 * HTML pages
 * Graphics
@@ -49,7 +49,7 @@ Lots of benefits:
 
 > CDN, GitHub pages, Netlify, Raspbery Pi, `python -m http.server`, or your mobile
 
-**Super fast serving time**
+**Super fast serving**
 
 > Important for SEO
 
@@ -92,7 +92,7 @@ For the content produced by you, every page, classification term, RSS entry etc.
 
 # Meet Hugo
 
-Hugo somes into play!
+Hugo comes into play!
 
 .center[![:scale 75%](/img/hugo-logo.png)]
 
@@ -104,6 +104,30 @@ Hugo somes into play!
 
 * Static website generator written in Go
 * Incredibly fast
-* Sophisticated
 * Utilising Go Templates
-* Loops, branching, expressions, lists, maps etc.
+* Sophisticated: variables, loops, conditions, expressions, lists, maps etc.
+
+Example of a Hugo template:
+
+```hugo
+<ul>
+    {{ range .Data.Pages }}
+    <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+    {{ end }}
+</ul>
+```
+
+---
+
+# Hugo features
+
+* Cross-platform (Linux, Windows, Mac OS)
+* Content in Markdown, Mmark, Org-mode or HTML
+* Auto-generated taxonomies (tags, sections)
+* SASS/SCSS compilation (*extended version* needed)
+* Asset minification (HTML/JS/CSS)
+* External data sources (YAML, TOML, CSV etc.)
+* Image processing (reading EXIF, scaling, filtering etc.)
+* Shortcodes (example: `{{< youtube "abcdefghij" >}}` embeds a YouTube video)
+* Multilingual websites
+* Related content
