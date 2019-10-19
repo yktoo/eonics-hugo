@@ -19,7 +19,7 @@ Dmitry Kann · https://yktoo.solutions
 1. Why would anyone make a static site?
 2. Hugo **is** the tool
 3. Hugo features
-4. TODO
+4. Hugo project structure
 
 ---
 
@@ -35,7 +35,7 @@ This content can include:
 * Scripts
 * XML sitemaps
 * RSS feeds
-* ... and many more
+* … and more
 
 This generated set of pages can then be deployed to just about anywhere.
 
@@ -48,6 +48,10 @@ Lots of benefits:
 **Write once — deploy anywhere**
 
 > CDN, GitHub pages, Netlify, Raspbery Pi, `python -m http.server`, or your mobile
+
+**It's efficient**
+
+> A page is much more often viewed than it is updated
 
 **Super fast serving**
 
@@ -121,9 +125,10 @@ Example of a Hugo template:
 
 # Hugo features
 
-* Cross-platform (Linux, Windows, Mac OS)
+* Open-source (GitHub: 38K ★, 590 contributors)
+* Cross-platform (Linux, Windows, Mac OS, *BSD)
 * Content in Markdown, Mmark, Org-mode or HTML
-* Auto-generated taxonomies (tags, sections)
+* Auto-generated taxonomies (tags, sections etc.)
 * SASS/SCSS compilation (*extended version* needed)
 * Asset minification (HTML/JS/CSS)
 * External data sources (YAML, TOML, CSV etc.)
@@ -131,3 +136,38 @@ Example of a Hugo template:
 * Shortcodes (example: `{{< youtube "abcdefghij" >}}` embeds a YouTube video)
 * Multilingual websites
 * Related content
+
+---
+
+# Hugo project structure
+
+* `archetypes`
+    - Content prototypes
+* `assets`
+    - Things that require some processing (e.g. SCSS)
+* `content`
+    - Site pages
+* `data`
+    - Data files
+* `i18n`
+    - Localisations
+* `layouts`
+    - Templates for presenting/formatting the content
+* `resources`
+    - Hugo's temporary folder
+* `static`
+    - Things served as is
+* `themes`
+    - Themes, which can contain defaults for assets, layouts etc.
+
+---
+
+# Hugo page kinds
+
+|Kind          |Description                                            |Example                                                                      |
+|--------------|-------------------------------------------------------|-----------------------------------------------------------------------------|
+|`home`        |The home page                                          |`/index.html`                                                                |
+|`page`        |A page showing a regular page                          |`my-post` page (`/posts/my-post/index.html`)                                 |
+|`section`     |A page listing regular pages from a given section      |`posts` section (`/posts/index.html`)                                        |
+|`taxonomy`    |A page listing regular pages from a given taxonomy term|page for the term `awesome` from `tags` taxonomy (`/tags/awesome/index.html`)|
+|`taxonomyTerm`|A page listing terms from a given taxonomy             |page for the `tags` taxonomy (`/tags/index.html`)                            |
