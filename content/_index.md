@@ -17,9 +17,11 @@ Dmitry Kann · https://yktoo.solutions
 # Agenda
 
 1. Why would anyone make a static site?
-2. Hugo **is** the tool
+2. Hugo is your dream's tool
 3. Hugo features
 4. Hugo project structure
+5. Hugo page kinds
+6. Quick start
 
 ---
 
@@ -42,8 +44,6 @@ This generated set of pages can then be deployed to just about anywhere.
 ---
 
 # Why?
-
-Lots of benefits:
 
 **Write once — deploy anywhere**
 
@@ -107,7 +107,7 @@ Hugo comes into play!
 # Hugo is…
 
 * Static website generator written in Go
-* Incredibly fast
+* Incredibly fast: **< 1 ms** per page
 * Utilising Go Templates
 * Sophisticated: variables, loops, conditions, expressions, lists, maps etc.
 
@@ -171,3 +171,18 @@ Example of a Hugo template:
 |`section`     |A page listing regular pages from a given section      |`posts` section (`/posts/index.html`)                                        |
 |`taxonomy`    |A page listing regular pages from a given taxonomy term|page for the term `awesome` from `tags` taxonomy (`/tags/awesome/index.html`)|
 |`taxonomyTerm`|A page listing terms from a given taxonomy             |page for the `tags` taxonomy (`/tags/index.html`)                            |
+
+---
+
+# Quick start
+
+1. Create boilerplate directory structure:
+```bash
+hugo new site mysite
+```
+2. Download a theme:
+```bash
+cd mysite
+git clone ... themes/THEMENAME
+```
+3. Adjust settings in `config.toml` (or `config.yml`)
