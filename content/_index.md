@@ -16,12 +16,27 @@ Dmitry Kann · https://yktoo.solutions
 
 # Agenda
 
-1. Why would anyone make a static site?
+0. Who am I
+1. Why would anyone want a static site?
 2. Hugo is your dream's tool
 3. Hugo features
 4. Hugo project structure
 5. Hugo page kinds
 6. Quick start
+
+---
+
+# Who am I
+
+* Name: Dmitry Kann
+* Profession: software developer
+* Origin: Russia
+
+<br>
+
+![:scale 100%](/img/my-sites.png)
+
+All open-source: the code is available at [github.com/yktoo](https://github.com/yktoo)
 
 ---
 
