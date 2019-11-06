@@ -44,10 +44,44 @@ cp -r /path/to/eonics-hugo/_acme-press/* .
 
 ![](static/img/screenshot-acme-press-1.png)
 
-### Further steps
+### Further assignment steps
+
+#### 1. Make portfolio items visible
+
+Make each portfolio article display a big version of the picture. Add the file `layouts/portfolio/single.html` with the following content:
+
+```html
+{{ define "main" }}
+<div class="col-xs-12 col-sm-8 col-md-9 content-column white-background">
+  {{ partial "mobile_nav_toggle.html" . }}
+  <div class="row">
+    <div class="col-lg-8">
+      <div class="content-column-content">
+         <h1>{{ .Title }}</h1>
+         <div>
+         {{ with .Params.image }}
+         <img src="{{ . | absURL }}" alt="Image">
+         {{ end }}
+         </div>
+         {{ .Content }}
+      </div>
+    </div>
+  </div>
+</div>
+{{ end }}
+```
+
+#### 2. Add a price parameter to each item
+
+Add `price: X.XX` (feel free to make up a number in each case) to the front matter of each `workN.md` file under `content/portfolio`.
+
+#### 3. Add price display
+
+Make the price show up in both list and single views.
+
+#### 4. TODO
 
 ...TODO...
-
 
 ### Bonus task: deploy your website to a hosting
 
@@ -60,11 +94,12 @@ But first you'll need to check it into a GitHub repository. Make sure to add the
 /resources/
 ```
 
-* [Render.com](...TODO...)
-* [Netlify](...TODO...)
-* [GitHub pages](...TODO...)
+* [Render.com](https://gohugo.io/hosting-and-deployment/hosting-on-render/)
+* [Netlify](https://gohugo.io/hosting-and-deployment/hosting-on-netlify/)
+* [GitHub pages](https://gohugo.io/hosting-and-deployment/hosting-on-github/)
 
 ### Useful links
 
+* Hugo templating: https://gohugo.io/templates/introduction/
 * Hugo function docs: https://gohugo.io/functions/
-* Hugo template docs: ...TODO...
+* Hugo `Page` variables: https://gohugo.io/variables/page/
