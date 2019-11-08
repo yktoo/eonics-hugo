@@ -201,3 +201,33 @@ cd mysite
 git clone ... themes/THEMENAME
 ```
 3. Adjust settings in `config.toml` (or `config.yml`)
+
+---
+
+class: center, middle
+
+# Let there be food!
+
+![Food!](/img/food.gif)
+
+---
+
+class: center, middle
+
+# Workshop
+
+### Making a static website with
+
+![:scale 50%](/img/hugo-logo.png)
+
+---
+
+# The workshop
+
+1. Go to https://github.com/yktoo/eonics-hugo
+2. Clone the repo
+3. Follow the steps from README.md
+
+## Good luck! :)
+
+(otherwise you can cheat by looking at `_solution`) 
