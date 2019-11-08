@@ -1,8 +1,8 @@
 # Eonics Open Hack Night #19: Hugo wizardry
 
-This repository contains a presentation implemented with [remark.js](https://remarkjs.com/) and—naturally—Hugo.
-
 ## The Presentation
+
+This repository contains a presentation implemented with [remark.js](https://remarkjs.com/) and—naturally—Hugo.
 
 In order to try it out, you'll first need to [install](https://gohugo.io/getting-started/installing/) Hugo.
 
