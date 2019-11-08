@@ -204,6 +204,16 @@ git clone ... themes/THEMENAME
 
 ---
 
+# What you can achieve with Hugo
+
+Have a look at **yktoo.com** (and source code at [github.com/yktoo/yktoo.com](https://github.com/yktoo/yktoo.com)):
+
+![Screenshot](/img/yktoo-com-generation.png)
+
+Sections, lists, taxonomies, pagination, cross-links, shortcodes, internationalisation, sitemaps and so on.
+
+---
+
 class: center, middle
 
 # Let there be food!
