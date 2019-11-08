@@ -1,0 +1,48 @@
+{{ define "main" }}
+<div class="col-xs-12 col-sm-8 col-md-9 content-column white-background">
+  {{ partial "mobile_nav_toggle.html" . }}
+  <div class="row">
+    <div class="col-lg-8">
+      <div class="content-column-content">
+         <h1>{{ .Title }}</h1>
+         <!-- Image -->
+         <div>
+         {{ with .Params.image }}
+         <img src="{{ . | absURL }}" alt="Image">
+         {{ end }}
+         </div>
+
+         <!-- Price -->
+         {{ with .Params.price }}
+         <div>
+             <h2>Price</h2>
+             <p>€ {{ float . | printf "%.2f" }}</p>
+         </div>
+         {{ end }}
+
+         <!-- Author -->
+         {{ with .Params.authors }}
+         <div>
+             <h2>Author</h2>
+             <p><a href="{{ . | urlize | print "/authors/" | relref $.Page }}">{{ . }}</a></p>
+         </div>
+         {{ end }}
+
+         <!-- Description -->
+         <div>
+             <h2>Description</h2>
+             {{ .Content }}
+         </div>
+      </div>
+
+      <!-- Prev/next buttons -->
+      <nav>
+          <ul class="pager">
+              <li class="previous">{{ with .PrevInSection }}<a href="{{ .RelPermalink }}">&larr; Previous</a>{{ end }}</li>
+              <li class="next">{{ with .NextInSection }}<a href="{{ .RelPermalink }}">Next &rarr;</a>{{ end }}</li>
+          </ul>
+      </nav>
+    </div>
+  </div>
+</div>
+{{ end }}

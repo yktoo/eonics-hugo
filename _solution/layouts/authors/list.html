@@ -1,0 +1,9 @@
+{{ define "main" }}
+    <h1>Works by {{ .Title }}</h1>
+    {{ with .Content }}
+    <div>
+        {{ . }}
+    </div>
+    {{ end }}
+    {{ partial "portfolio.html" . }}
+{{ end }}

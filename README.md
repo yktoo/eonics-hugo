@@ -30,7 +30,7 @@ For the content we use a pre-cooked set of portfolio items.
 ```bash
 hugo new site acme-press -f yml
 ```
-2. Download a theme:
+2. Download the **Creative Portfolio** theme:
 ```bash
 cd acme-press
 git clone https://github.com/kishaningithub/hugo-creative-portfolio-theme.git themes/hugo-creative-portfolio-theme
@@ -79,11 +79,30 @@ Add `price: X.XX` (feel free to make up a number in each case) to the front matt
 
 Make the price show up in both list and single views.
 
-#### 4. TODO
+Hint: fetch the price value as `{{ .Params.price }}`
 
-...TODO...
+#### 4. Add navigation buttons
 
-### Bonus task: deploy your website to a hosting
+Add **Previous** and **Next** buttons for portfolio items in the single view.
+
+#### 5. Add authors taxonomy
+
+* Add `authors` taxonomy to `config.yml`.
+* Add `authors:` parameter to the content pages' front matter, with a single author.
+* Add list and terms templates: `layouts/authors/list.html` and `layouts/authors/terms.html` respectively.
+* Add Author heading to the single item view.
+* Add Authors link to the side menu.
+
+Hint: read about [Taxonomies](https://gohugo.io/content-management/taxonomies/) in Hugo docs.
+
+#### 6. Add tags taxonomy
+
+* Add `tags` taxonomy to `config.yml`.
+* Add `tags:` parameter to the content pages' front matter, with a list of tags.
+* Add list and terms templates: `layouts/tags/list.html` and `layouts/tags/terms.html` respectively.
+* Add Tags link to the side menu.
+
+#### 7. Bonus task: deploy your website to a hosting
 
 If you want your website to actually be available online, you can choose from a number of free alternatives.
 
@@ -94,6 +113,8 @@ But first you'll need to check it into a GitHub repository. Make sure to add the
 /resources/
 ```
 
+Then follow the steps for the hosting of your choice:
+
 * [Render.com](https://gohugo.io/hosting-and-deployment/hosting-on-render/)
 * [Netlify](https://gohugo.io/hosting-and-deployment/hosting-on-netlify/)
 * [GitHub pages](https://gohugo.io/hosting-and-deployment/hosting-on-github/)
@@ -103,3 +124,7 @@ But first you'll need to check it into a GitHub repository. Make sure to add the
 * Hugo templating: https://gohugo.io/templates/introduction/
 * Hugo function docs: https://gohugo.io/functions/
 * Hugo `Page` variables: https://gohugo.io/variables/page/
+
+### Solution
+
+The workable solution to all of the above is located under `_solution`.

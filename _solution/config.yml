@@ -1,0 +1,38 @@
+baseURL: http://example.org/
+languageCode: en-us
+title: Acme Press
+theme: hugo-creative-portfolio-theme
+
+params:
+    navlinks:
+        - name: Home
+          url: portfolio/
+          home: true
+
+        - name: About
+          url: about/
+
+        - name: Authors
+          url: authors/
+
+        - name: Tags
+          url: tags/
+
+        - name: "Get in touch"
+          url: contact/
+
+    social:
+        facebook:      "full page or profile url in facebook"
+        googleplus:    "full profile url in googleplus"
+        email:         "email@example.com"
+        twitter:       "full profile url in twitter"
+        linkedin:      "full profile url in linkedin"
+        stackoverflow: "full profile url in stackoverflow"
+        instagram:     "full profile url in instagram"
+        github:        "full profile url in github"
+        youtube:       "full profile url in youtube"
+        whatsapp:      "wa.me service link"
+
+taxonomies:
+    author: authors
+    tag: tags
