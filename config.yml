@@ -1,6 +1,7 @@
-baseURL: "http://TODO.org/"
+baseURL: "https://yktoo.github.io/eonics-hugo/"
 languageCode: "en-us"
 title: "Eonics Open Hack Night #19: Hugo wizardry"
+publishDir: docs
 
 disableKinds:
     - taxonomy
