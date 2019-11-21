@@ -8,7 +8,7 @@ class: center, middle
 
 # with
 
-![:scale 50%](/img/hugo-logo.png)
+![:scale 50%](img/hugo-logo.png)
 
 Dmitry Kann · https://yktoo.solutions
 
@@ -34,7 +34,7 @@ Dmitry Kann · https://yktoo.solutions
 
 <br>
 
-![:scale 100%](/img/my-sites.png)
+![:scale 100%](img/my-sites.png)
 
 All open-source: the code is available at [github.com/yktoo](https://github.com/yktoo)
 
@@ -113,7 +113,7 @@ For the content produced by you, every page, classification term, RSS entry etc.
 
 Hugo comes into play!
 
-.center[![:scale 75%](/img/hugo-logo.png)]
+.center[![:scale 75%](img/hugo-logo.png)]
 
 .center[The fastest website generator ever: **1000…5000** pages/second]
 
@@ -208,7 +208,7 @@ git clone ... themes/THEMENAME
 
 Have a look at **yktoo.com** (and source code at [github.com/yktoo/yktoo.com](https://github.com/yktoo/yktoo.com)):
 
-![Screenshot](/img/yktoo-com-generation.png)
+![Screenshot](img/yktoo-com-generation.png)
 
 Sections, lists, taxonomies, pagination, cross-links, shortcodes, internationalisation, sitemaps and so on.
 
@@ -218,7 +218,7 @@ class: center, middle
 
 # Let there be food!
 
-![Food!](/img/food.gif)
+![Food!](img/food.gif)
 
 ---
 
@@ -228,7 +228,7 @@ class: center, middle
 
 ### Making a static website with
 
-![:scale 50%](/img/hugo-logo.png)
+![:scale 50%](img/hugo-logo.png)
 
 ---
 
